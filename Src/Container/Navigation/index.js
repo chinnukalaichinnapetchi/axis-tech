@@ -9,7 +9,7 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import 'react-native-reanimated';
+// import 'react-native-reanimated';
 import DrawerNavigation from "./DrawerNavigation";
 import Login from "../Login";
 import Dashboard from "../Dashboard"
