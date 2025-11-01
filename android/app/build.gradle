@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.fivek.hrm"
+    namespace "com.axis.tech"
     defaultConfig {
-        applicationId "com.fivek.hrm"
+        applicationId "com.axis.tech"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

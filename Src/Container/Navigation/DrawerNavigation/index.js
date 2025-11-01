@@ -33,7 +33,7 @@ function CustomDrawerContent({ navigation }) {
     <DrawerContentScrollView>
       {/* <Text style={styles.header}>JK CAR CARE</Text> */}
       <Image
-        source={require("../../../assets/logo.png")} // <-- your logo here
+        source={require("../../../assets/axis_logo.png")} // <-- your logo here
         style={styles.logo}
         resizeMode="contain"
       />

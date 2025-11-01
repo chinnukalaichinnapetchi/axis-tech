@@ -1,4 +1,4 @@
-package com.fivek.hrm
+package com.axis.tech
 
 import android.app.Application
 import com.facebook.react.PackageList

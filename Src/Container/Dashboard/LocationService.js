@@ -14,7 +14,7 @@ export async function requestLocationPermission() {
   return true; // iOS permissions handled automatically
 }
 
-Geocoder.init("AIzaSyBqru7_H3BnbeURWSUclC24MSzk8zwhIeY", { language: "en" });
+Geocoder.init("AIzaSyD29K0KVSWUtjSClkeSMa6fN1ma-D0NhHE", { language: "en" });
 
 export async function getCurrentLocationWithAddress() {
   const hasPermission = await requestLocationPermission();

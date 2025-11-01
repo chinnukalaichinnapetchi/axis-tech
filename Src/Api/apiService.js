@@ -2,6 +2,9 @@ import apiClient from "./apiClient";
 
 // Generic function
 export const apiCall = async (method, url, data = {}, config = {}) => {
+  const fullUrl = `${apiClient.defaults.baseURL?.replace(/\/$/, '') || ''}${url}`;
+
+  console.log('FULL URL ====>', fullUrl);
   console.log('url======>',url,data);
   
   try {

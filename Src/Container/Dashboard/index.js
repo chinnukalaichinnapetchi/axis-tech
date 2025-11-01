@@ -70,7 +70,7 @@ const Dashboard = ({ navigation }) => {
   }, [])
   useEffect(() => {
     const backAction = () => {
-      Alert.alert("5K_HRM", "Do you want to exit the app?", [
+      Alert.alert("AxisTech", "Do you want to exit the app?", [
         {
           text: "Cancel",
           onPress: () => null,
@@ -110,7 +110,7 @@ const Dashboard = ({ navigation }) => {
           setLoading(false)
         } else if(res.status===500) {
           setLoading(false)
-          Alert.alert("5K_HRM",res.message, [
+          Alert.alert("AxisTech",res.message, [
         // {
         //   text: "Cancel",
         //   onPress: () => null,

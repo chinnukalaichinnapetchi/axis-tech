@@ -110,7 +110,7 @@ navigation.navigate('Main')
 
         <View  style={{flex:1,justifyContent:'center'}}>
         <Image
-          source={require("../../assets/logo.png")} // <-- your logo here
+          source={require("../../assets/axis_logo.png")} // <-- your logo here
           style={styles.logo}
           resizeMode="contain"
         />
@@ -189,7 +189,7 @@ export default Login;
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: "#f4f4f4",
+    backgroundColor: "#fff",
   },
   container: {
     flex: 1,
@@ -200,14 +200,14 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: "bold",
     textAlign: "center",
-    marginTop: 10,
+    marginTop: 0,
     color: "#000",
   },
   logo: {
     width: width * 0.9,
     height: height * 0.18,
     alignSelf: "center",
-    marginVertical: 70,
+    marginVertical: 60,
   },
   inputContainer: {
     flex: 1,
