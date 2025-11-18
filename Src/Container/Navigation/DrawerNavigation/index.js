@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useCallback } from "react";
 import { createDrawerNavigator, DrawerContentScrollView } from "@react-navigation/drawer";
 import {
   View,
@@ -6,15 +6,30 @@ import {
   TouchableOpacity,
   StyleSheet,
   Image,
-  Dimensions
+  Dimensions,
+  BackHandler
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Dashboard from "../../Dashboard";
+import { useFocusEffect } from "@react-navigation/native";
+
 
 const Drawer = createDrawerNavigator();
 const { width, height } = Dimensions.get("window");
 
-function Screen({ route }) {
+function Screen({ route, navigation }) {
+   useFocusEffect(
+    useCallback(() => {
+      const onBackPress = () => {
+        navigation.goBack();
+        return true;
+      };
+
+      const backHandler = BackHandler.addEventListener("hardwareBackPress", onBackPress);
+
+      return () => backHandler.remove();
+    }, [navigation])
+  );
   return (
     <View style={styles.screen}>
       <Text style={styles.screenText}>{route.name} Screen</Text>
